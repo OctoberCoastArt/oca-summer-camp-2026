@@ -1,1 +1,353 @@
+Here is the complete, single-file HTML code for the October Coast Summer Art Camp website. It incorporates the typewriter-style headings with a readable sans-serif body font, applies the requested CMYK color borders to the sections, adds the text content with required placeholders, and removes the cloud animation.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>October Coast Summer Art Camp</title>
+    <style>
+        /* Typography: Typewriter headers, readable sans-serif body */
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --navy: #0a1128;
+            --cyan: #00ffff;
+            --magenta: #ff00ff;
+            --yellow: #ffff00;
+            --black-cmyk: #333333;
+            --text-light: #f4f4f9;
+        }
+
+        body {
+            background-color: var(--navy);
+            color: var(--text-light);
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Courier Prime', monospace;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* CMYK Borders layout */
+        .section-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.03);
+            /* Different CMYK colors along different edges */
+            border-top: 5px solid var(--cyan);
+            border-right: 5px solid var(--magenta);
+            border-bottom: 5px solid var(--yellow);
+            border-left: 5px solid var(--black-cmyk);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px dashed var(--cyan);
+        }
+
+        .logo {
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            color: var(--cyan);
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: var(--magenta);
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .grid-gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid var(--yellow);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+            color: var(--cyan);
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-left: 3px solid var(--magenta);
+        }
+
+        button {
+            padding: 15px;
+            background-color: var(--cyan);
+            color: var(--navy);
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--magenta);
+            color: var(--text-light);
+        }
+
+        .legal-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-left: 4px solid var(--yellow);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        .payment-note {
+            color: var(--yellow);
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="OCsummer_camp_logo_Trans_BG.png" alt="October Coast Summer Art Camp Logo" class="logo">
+        <h1>October Coast Summer Art Camp</h1>
+        <p>Berwyn, IL | June – Mid-August 2026 | Ages 5+</p>
+        <div class="nav-links">
+            <a href="#about">About & News</a>
+            <a href="#curriculum">Curriculum</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#register">Register</a>
+            <a href="#policies">Legal & Policies</a>
+        </div>
+    </header>
+
+    <div id="about" class="section-container">
+        <h2>News & Updates</h2>
+        <p>Welcome to the October Coast Summer Art Camp! Running throughout the summer of 2026 in Berwyn, IL, our camp is designed to keep creativity alive while school is out. [span_0](start_span)We keep costs incredibly low by utilizing upcycled materials, bulk basics, and natural items[span_0](end_span). Check back here for weekly updates and supply drives!</p>
+    </div>
+
+    <div id="curriculum" class="section-container">
+        <h2>The 10-Week "Summer of Creation" Curriculum</h2>
+        
+        <h3>Week 1: Cardboard City (Architecture & Engineering)</h3>
+        [span_1](start_span)<p>Theme: Building 3D structures out of recycled boxes[span_1](end_span).</p>
+        <ul>
+            [span_2](start_span)<li><strong>Ages 5-6:</strong> Painting large appliance boxes to make "houses" and crawling through them[span_2](end_span).</li>
+            [span_3](start_span)<li><strong>Ages 7-12:</strong> Constructing miniature cities, dioramas, or marble runs using toilet paper rolls, shoeboxes, and masking tape[span_3](end_span).</li>
+        </ul>
+
+        <h3>Week 2: Nature's Palette (Eco-Art)</h3>
+        [span_4](start_span)<p>Theme: Using the outdoors as both inspiration and material[span_4](end_span).</p>
+        <ul>
+            [span_5](start_span)<li><strong>Ages 5-6:</strong> Mud painting, leaf rubbings with unwrapped crayons, and collecting twigs[span_5](end_span).</li>
+            [span_6](start_span)<li><strong>Ages 7-12:</strong> Andy Goldsworthy-inspired temporary land art, making paint out of crushed berries/spices, and sun prints (cyanotypes)[span_6](end_span).</li>
+        </ul>
+
+        <h3>Week 3: Messy Masterpieces (Process Art)</h3>
+        [span_7](start_span)<p>Theme: Focusing on how art is made rather than the final product[span_7](end_span).</p>
+        <ul>
+            [span_8](start_span)<li><strong>Ages 5-6:</strong> Bubble painting (blowing bubbles in paint and catching them on paper), finger painting, and sponge stamping[span_8](end_span).</li>
+            [span_9](start_span)<li><strong>Ages 7-12:</strong> Jackson Pollock-style splatter painting outdoors, pendulum painting, and tape-resist geometric canvas art[span_9](end_span).</li>
+        </ul>
+
+        <h3>Week 4: The Puppet Theater (Storytelling)</h3>
+        [span_10](start_span)<p>Theme: Creating characters and bringing them to life[span_10](end_span).</p>
+        <ul>
+            [span_11](start_span)<li><strong>Ages 5-6:</strong> Paper bag puppets and simple sock puppets[span_11](end_span).</li>
+            [span_12](start_span)<li><strong>Ages 7-12:</strong> Papier-mâché marionettes or shadow puppets using black cardstock and a white sheet illuminated by a flashlight[span_12](end_span).</li>
+        </ul>
+
+        <h3>Week 5: Cultural Crafts (World Art)</h3>
+        [span_13](start_span)<p>Theme: Exploring techniques from around the globe[span_13](end_span).</p>
+        <ul>
+            [span_14](start_span)<li><strong>Ages 5-6:</strong> Easy tissue-paper "stained glass" and simple origami[span_14](end_span).</li>
+            [span_15](start_span)<li><strong>Ages 7-12:</strong> Making miniature piñatas from recycled cereal boxes, weaving with yarn on cardboard looms, or Mexican folk art mirrors[span_15](end_span).</li>
+        </ul>
+
+        <h3>Week 6: Wild Wearables (Fashion & Jewelry)</h3>
+        [span_16](start_span)<p>Theme: Art you can wear[span_16](end_span).</p>
+        <ul>
+            [span_17](start_span)<li><strong>Ages 5-6:</strong> Macaroni necklaces, paper crowns, and superhero masks[span_17](end_span).</li>
+            [span_18](start_span)<li><strong>Ages 7-12:</strong> Tie-dyeing old white t-shirts, creating complex friendship bracelets, or designing custom tote bags with fabric markers[span_18](end_span).</li>
+        </ul>
+
+        <h3>Week 7: 2D Explorations (Drawing & Comic Books)</h3>
+        [span_19](start_span)<p>Theme: Mastering pencils, pens, and paper[span_19](end_span).</p>
+        <ul>
+            [span_20](start_span)<li><strong>Ages 5-6:</strong> Collaborative mural drawing on giant rolls of butcher paper[span_20](end_span).</li>
+            [span_21](start_span)<li><strong>Ages 7-12:</strong> Designing their own comic books, learning basic anatomy, and practicing continuous contour drawing[span_21](end_span).</li>
+        </ul>
+
+        <h3>Week 8: Junk Drawer Sculptures (Upcycling)</h3>
+        [span_22](start_span)<p>Theme: Turning trash into treasure[span_22](end_span).</p>
+        <ul>
+            [span_23](start_span)<li><strong>Ages 5-6:</strong> Gluing bottle caps, buttons, and pipe cleaners to heavy cardboard[span_23](end_span).</li>
+            [span_24](start_span)<li><strong>Ages 7-12:</strong> Creating "robot" sculptures using tin cans, wire, old CDs, and hot glue (supervised)[span_24](end_span).</li>
+        </ul>
+
+        <h3>Week 9: Under the Sea (Water & Color)</h3>
+        [span_25](start_span)<p>Theme: Aquatic life and watercolor techniques[span_25](end_span).</p>
+        <ul>
+            [span_26](start_span)<li><strong>Ages 5-6:</strong> Watercolor and salt painting, creating egg-carton sea turtles[span_26](end_span).</li>
+            [span_27](start_span)<li><strong>Ages 7-12:</strong> Wet-on-wet watercolor landscapes, wax resist painting (white crayon under watercolor), and 3D paper fish mobiles[span_27](end_span).</li>
+        </ul>
+
+        <h3>Week 10: The Camp Gallery (Exhibition)</h3>
+        [span_28](start_span)<p>Theme: Curating and displaying art[span_28](end_span).</p>
+        <ul>
+            [span_29](start_span)<li><strong>All Ages:</strong> This week is spent finishing up favorite projects, creating "artist statements," and setting up a gallery[span_29](end_span). [span_30](start_span)On Friday, invite parents to walk through the space to see what the kids created[span_30](end_span)!</li>
+        </ul>
+    </div>
+
+    <div id="gallery" class="section-container">
+        <h2>Camp Photo Gallery</h2>
+        <div class="grid-gallery">
+            <img src="IMG_0927.png" alt="Camp Photo">
+            <img src="IMG_0928.png" alt="Camp Photo">
+            <img src="IMG_0930.png" alt="Camp Photo">
+            <img src="IMG_0931.png" alt="Camp Photo">
+            <img src="IMG_0932.png" alt="Camp Photo">
+            <img src="IMG_0934.png" alt="Camp Photo">
+            <img src="IMG_0935.png" alt="Camp Photo">
+            <img src="IMG_0936.png" alt="Camp Photo">
+            <img src="IMG_0938.png" alt="Camp Photo">
+            <img src="IMG_0939.png" alt="Camp Photo">
+            <img src="IMG_0940.png" alt="Camp Photo">
+            <img src="IMG_0941.png" alt="Camp Photo">
+            <img src="IMG_0942.png" alt="Camp Photo">
+            <img src="IMG_0943.png" alt="Camp Photo">
+            <img src="IMG_0944.png" alt="Camp Photo">
+            <img src="OCsummer_camp_logo_Trans_BG.png" alt="Camp Logo">
+        </div>
+    </div>
+
+    <div id="policies" class="section-container">
+        <h2>Legal Documents & Policies</h2>
+        <p>Please review our legal onboarding documents below. <strong>Physical signatures for all forms will be collected in person at check-in.</strong></p>
+
+        <h3>Waiver and Release of Liability</h3>
+        <div class="legal-box">
+            [span_31](start_span)<p>In consideration of my child being permitted to participate in the summer art camp activities, I agree to the following[span_31](end_span):</p>
+            <p>1. [span_32](start_span)Assumption of Risk: I understand that participating in art camp activities (including but not limited to painting, using scissors or tools, physical activity, and utilizing upcycled/recycled materials) involves inherent risks[span_32](end_span). [span_33](start_span)I acknowledge that these risks could result in physical injury, property damage, or other harm[span_33](end_span). [span_34](start_span)I willingly and voluntarily assume full responsibility for all risks associated with my child's participation[span_34](end_span).</p>
+            <p>2. [span_35](start_span)Release of Liability: I hereby release, waive, and discharge October Coast Summer Art Camp, its director, staff, volunteers, and the property owners of the facility where the camp is held from any and all liability, claims, demands, or causes of action arising out of or related to any injury, loss, or damage that may occur to my child or my property during camp activities[span_35](end_span).</p>
+            <p>3. [span_36](start_span)Indemnification: I agree to indemnify and hold harmless the released parties from any legal claims, costs, or expenses (including attorney fees) resulting from my child's participation in this program[span_36](end_span).</p>
+        </div>
+
+        <h3>Medical & Emergency Contact Policy</h3>
+        <div class="legal-box">
+            [span_37](start_span)<p>Parents must disclose if their child has any allergies (Food, environmental, medical - Note: We use recycled food containers like egg cartons in our crafts)[span_37](end_span). [span_38](start_span)Parents must also disclose if the child has any medical conditions, special needs, requires any accommodations, or carries an EpiPen or Inhaler[span_38](end_span).</p>
+            [span_39](start_span)<p>Consent for Emergency Medical Treatment: In the event of a medical emergency, I grant permission to October Coast Summer Art Camp staff to administer basic first aid[span_39](end_span). [span_40](start_span)If I or my designated emergency contacts cannot be reached, I authorize staff to secure emergency medical care, including calling 911 or transporting my child to the nearest hospital[span_40](end_span). [span_41](start_span)I agree to assume full financial responsibility for any emergency medical care provided[span_41](end_span).</p>
+        </div>
+
+        <h3>Food, Snack, and Allergy Waiver</h3>
+        <div class="legal-box">
+            [span_42](start_span)<p>Lunch & Water Policy: I understand that October Coast Summer Art Camp does not provide full meals[span_42](end_span). [span_43](start_span)I agree to send my child with a packed, nut-free lunch and a filled, reusable water bottle each day[span_43](end_span).</p>
+            [span_44](start_span)<p>Provided Snacks: October Coast Summer Art Camp will provide a daily light snack (e.g., pretzels, fruit, crackers, or popsicles)[span_44](end_span). [span_45](start_span)Parents will designate whether they give permission or do not give permission for their child to consume camp-provided snacks[span_45](end_span). [span_46](start_span)If no permission is given, parents must pack a separate snack each day[span_46](end_span).</p>
+            [span_47](start_span)<p>Allergy Acknowledgment: I understand that while October Coast Summer Art Camp aims to be a nut-free environment, they cannot guarantee a facility entirely free of allergens, especially given the use of upcycled food boxes (like egg cartons or cereal boxes) in art projects[span_47](end_span).</p>
+        </div>
+
+        <h3>Photo and Media Release</h3>
+        <div class="legal-box">
+            [span_48](start_span)<p>During the course of the October Coast Summer Art Camp summer program, we will be taking photographs and videos of the campers creating art, as well as photographing their final art projects[span_48](end_span). [span_49](start_span)These images may be used for promotional purposes, including our website, social media pages, and future community flyers[span_49](end_span).</p>
+            [span_50](start_span)[span_51](start_span)[span_52](start_span)<p>Parents may grant full permission, permission for artwork only (no faces), or withhold all permission[span_50](end_span)[span_51](end_span)[span_52](end_span). [span_53](start_span)If permission is granted, a child's full name will never be published alongside their photo[span_53](end_span).</p>
+        </div>
+
+        <h3>Code of Conduct & Refund Policy</h3>
+        <div class="legal-box">
+            <p><em>[Placeholder: Camp Code of Conduct details will be inserted here.]</em></p>
+            <p><em>[Placeholder: Camp Refund Policy details will be inserted here.]</em></p>
+        </div>
+    </div>
+
+    <div id="register" class="section-container">
+        <h2>Camp Registration</h2>
+        <form action="https://formspree.io/f/mqewnnqo" method="POST">
+            <input type="hidden" name="_subject" value="New Camp Registration!">
+            <input type="hidden" name="_replyto" value="info@octobercoast.art">
+
+            <label for="camperName">Camper First Name:</label>
+            <input type="text" id="camperName" name="Camper First Name" required>
+
+            <label for="camperAge">Camper Age:</label>
+            <input type="number" id="camperAge" name="Camper Age" min="5" required>
+
+            <label for="parentName">Parent First Name:</label>
+            <input type="text" id="parentName" name="Parent First Name" required>
+
+            <label for="parentPhone">Parent Phone Number:</label>
+            <input type="tel" id="parentPhone" name="Parent Phone" required>
+
+            <label for="parentEmail">Parent Email Address:</label>
+            <input type="email" id="parentEmail" name="Parent Email" required>
+
+            <label for="emergencyContact">Emergency Contact (First Name & Phone):</label>
+            <input type="text" id="emergencyContact" name="Emergency Contact" required>
+
+            <label for="allergies">Allergies or Medical Needs (Type "None" if n/a):</label>
+            <textarea id="allergies" name="Allergies" rows="3" required></textarea>
+
+            <label for="session">Session Preference:</label>
+            <select id="session" name="Session Preference" required>
+                <option value="Full 10 Weeks">Full 10 Weeks</option>
+                <option value="Weeks 1-5">Weeks 1-5 (June/July)</option>
+                <option value="Weeks 6-10">Weeks 6-10 (July/August)</option>
+            </select>
+
+            <label style="color: var(--text-light); font-weight: normal;">
+                <input type="checkbox" name="Policy Agreement" required>
+                I have read the Legal Documents & Policies outlined above and agree to sign physical copies at check-in.
+            </label>
+
+            <button type="submit">Submit Registration</button>
+            <p class="payment-note">Note: Registration fees are handled securely in person at check-in.</p>
+        </form>
+    </div>
+
+</body>
+</html>
+
+```
 
