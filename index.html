@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>October Coast Summer Art Camp</title>
     <style>
-        /* Typography: Fredoka (Playful) and Nunito (Clean) */
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;600;700&display=swap');
 
         :root {
@@ -18,7 +17,6 @@
             --text-muted: #cbd5e1;
         }
 
-        /* The CMYK Edge Border */
         .page-frame {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -30,19 +28,17 @@
             border-left: 6px solid var(--black-cmyk);
         }
 
-        /* Stylized SVG Grass Footer */
         .grass-bg {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 120px;
-            z-index: 0; /* Keeps it behind text but visible */
-            opacity: 0.15; /* Subtle transparency */
+            z-index: 0;
+            opacity: 0.15;
             pointer-events: none;
         }
 
-        /* Smooth Scrolling */
         html {
             scroll-behavior: smooth;
         }
@@ -58,13 +54,12 @@
 
         .content-wrapper {
             position: relative;
-            z-index: 1; /* Ensures text stays above the grass */
+            z-index: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px 100px 20px;
         }
 
-        /* Sticky Navigation */
         .sticky-nav {
             position: sticky;
             top: 0;
@@ -96,7 +91,6 @@
             transform: scale(1.1);
         }
 
-        /* Fix scrolling offset so nav doesn't cover headers */
         section {
             scroll-margin-top: 80px; 
             margin-bottom: 50px;
@@ -127,7 +121,6 @@
             margin-bottom: 1rem;
         }
 
-        /* News & Search */
         #newsSearch {
             width: 100%;
             box-sizing: border-box;
@@ -173,7 +166,6 @@
             display: block;
         }
 
-        /* Gallery - Hover Magic */
         .grid-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -199,7 +191,6 @@
             position: relative;
         }
 
-        /* Curriculum Styles */
         .curriculum-week {
             margin-bottom: 20px;
             background: rgba(0, 0, 0, 0.2);
@@ -212,7 +203,6 @@
             margin-top: 0;
         }
 
-        /* Forms & Buttons */
         form {
             display: flex;
             flex-direction: column;
@@ -277,7 +267,6 @@
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
         }
 
-        /* Legal Boxes */
         .legal-box {
             background-color: rgba(0, 0, 0, 0.3);
             padding: 20px;
@@ -309,7 +298,7 @@
 
     <div class="content-wrapper">
         <header>
-            <img src="images/OCsummer%20camp%20logo%20Trans%20BG.png" alt="October Coast Summer Art Camp Logo" class="logo">
+            <img src="Images/OCsummer%20camp%20logo%20Trans%20BG.png" alt="October Coast Summer Art Camp Logo" class="logo">
             <h1>October Coast</h1>
             <div class="subtitle">Summer Art Camp 2026</div>
             <p>Berwyn, IL | June – Mid-August | Ages 5+</p>
@@ -418,22 +407,22 @@
         <section id="gallery">
             <h2>Photo Gallery</h2>
             <div class="grid-gallery">
-                <img src="images/IMG_0927.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0928.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0929.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0930.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0931.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0934.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0935.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0936.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0937.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0938.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0939.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0940.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0942.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0943.jpeg" alt="Camp Activity">
-                <img src="images/IMG_0944.jpeg" alt="Camp Activity">
-                <img src="images/OCsummer%20camp%20logo%20Trans%20BG.png" alt="Camp Logo">
+                <img src="Images/IMG_0927.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0928.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0929.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0930.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0931.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0934.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0935.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0936.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0937.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0938.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0939.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0940.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0942.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0943.jpeg" alt="Camp Activity">
+                <img src="Images/IMG_0944.jpeg" alt="Camp Activity">
+                <img src="Images/OCsummer%20camp%20logo%20Trans%20BG.png" alt="Camp Logo">
             </div>
         </section>
 
@@ -553,4 +542,3 @@
 
 </body>
 </html>
-
